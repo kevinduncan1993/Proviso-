@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* Style all input fields */
+
+@font-face {
+    font-family: Glacial;
+    src: url(font/glacial-indifference.regular.otf);
+}
+
+@font-face {
+    font-family: GlacialBold;
+    src: url(font/glacial-indifference.bold.otf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+   	background-color: #fbfbfb;
+}
+
+
+main {
+    flex: auto;
+    margin-top: 125px;
+   
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	margin: 3%;
+}
+
+h1 {
+	font-size: 40px;
+}

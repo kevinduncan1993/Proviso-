@@ -1,0 +1,152 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
+.container {
+	min-height: 70vh;
+	overflow-y: auto;
+	min-height: 70vh;
+	overflow-y: auto;
+}
+
+#columns {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 63% auto;
+    padding-bottom: 3%;
+}
+
+.left-card {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+} 
+
+.right-card {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.left-card:hover, .right-card:hover {
+	border: 2px solid #33C8CC;
+	box-shadow: 0 4px 8px 0 #33C8CC;
+}
+
+h1 {
+	text-align: center;
+}
+
+.About {
+	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.About img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.right_card, .right_card hr {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+	width: 100%;
+	padding: 12px 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+  	width: 25%;
+  	background-color: var(--button-color);
+	color: var(--button-text-color);
+  	padding: 14px 20px;
+  	margin: 4%;
+	border: 1px solid black;
+  	border-radius: 15px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
+	border: 1px solid black;
+}
+
+.contact_header {
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.form-elements {
+	align-content: center;
+}
+
+fieldset {
+	background-color: #33C8CC;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.button {
+	margin-right: 5%;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.bottom-img {
+	margin-top: 20px;
+}
+
+.bottom-img img {
+	height: 50px;
+	width: auto;
+}
+
+.bottom-img img:hover {
+	border: 1px solid #33C8CC;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 #33C8CC;
+	transition: 0.3s;
+}
+
+.contact-info-grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	column-gap: 7%;
+	justify-content: center;
+}
+
+.thankyou_message tr {
+	background-color: #33C8CC;
+	color: black;
+}
+
+.thankyou_message td {
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+}
+
+.thankyou_message table {
+	margin: 15px auto 0 auto;
+}

@@ -1,0 +1,167 @@
+/*
+Blue Team
+Proviso site CSS file
+*/
+
+@font-face {
+    font-family: Glacial;
+    src: url(font/glacial-indifference.regular.otf);
+}
+
+@font-face {
+    font-family: GlacialBold;
+    src: url(font/glacial-indifference.bold.otf);
+}
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ header ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 125px;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #565656;
+  z-index:1;
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+	width: 30vw;
+}
+
+.header-middle {
+	width: 40vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-right {
+	width: 30vw;
+	align-items: center;
+	
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    padding-top: 10px;
+    text-align: left;
+    width: 250px;
+    height: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 6px;
+}
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ header navbars ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.header-nav ul{
+  	display: flex;                  /* establish flex container */
+  	justify-content: center;
+  	list-style-type: none;
+  	padding: 0;
+  	height: 25px;
+}
+.header-nav ul a:hover {
+	border-bottom: 1px solid #CC3733;
+}
+
+.header-nav #left {
+	border-right: 1px solid black;
+	padding-right: 5%;
+}
+
+.header-nav #middle {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.header-nav #right {
+	border-left: 1px solid black;
+	padding-left: 5%;
+}
+.sign-in-nav{
+  	display: flex;                  /* establish flex container */
+  	justify-content: center;
+}
+
+.sign-in-nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  padding: 0;
+}
+
+.sign-in-nav #li-left {
+	border-bottom: 1px solid;
+}
+
+.sign-in-nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.sign-in-nav li a:hover {
+	color: #CC3733;
+}
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ header navbars ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ header ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ footer ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.footer-nav{
+	border-top: 1px solid;
+	padding: 15px 0 15px 0;
+	background-color: #fbfbfb;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8vh;
+}
+
+.footer-nav a{
+	text-decoration: none;
+    color: black;
+    padding-bottom: 6px;
+}
+
+.footer-nav ul{
+  	display: flex;                  /* establish flex container */
+  	justify-content: center;
+  	list-style-type: none;
+  	padding: 0;
+  	height: 25px;
+  	margin: 0;
+  	width: 100%;
+}
+.footer-nav a:hover {
+	border-bottom: 1px solid #6c0001;
+}
+
+.footer-nav #left {
+	border-right: 1px solid black;
+	padding-right: 4%;
+}
+
+.footer-nav #right {
+	padding-left: 4%;
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ footer ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/

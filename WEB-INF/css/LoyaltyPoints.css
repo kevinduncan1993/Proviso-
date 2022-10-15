@@ -1,0 +1,59 @@
+body {
+   	background-color: #fbfbfb;
+}
+
+
+main {
+    margin-top: 125px;
+    padding-bottom: 20px;
+   
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.loyalty_top, .rewards {
+	width: 80%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#badge img {
+	height: 200px;
+	width: auto;
+}
+
+caption {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.rewards table, .rewards th, .rewards caption, .data tr, .data td {
+	border: 1px solid black;
+}
+
+.data, th {
+	padding: 5px 0 5px 0;
+}
+
+.data:hover {
+	background-color: #33C8CC;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+#total {
+	text-align: right;
+}
+
+.bottom {
+	padding: 20px 0 20px 0;
+}
+
+#sum {
+	border: 1px solid black;
+}

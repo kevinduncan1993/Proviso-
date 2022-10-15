@@ -1,0 +1,156 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+}
+
+.main-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 3%;
+	
+}
+
+	select {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    -ms-appearance: none;
+	    appearance: none;
+	    outline: 0;
+	    border: 1px solid black;
+		border-radius: 10px;
+	    padding-right: 45px;
+	    text-align: center;
+	    box-sizing: border-box;
+	}
+	     
+	.select {
+	    position: relative;
+	    display: block;
+	    width: 20em;
+	    height: 2em;
+	    overflow: hidden;
+	}
+	 
+	select {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0;
+	    color: black;
+	    cursor: pointer;
+	}
+	 
+	select::-ms-expand {
+	    display: none;
+	}
+	 
+	.select::after {
+	    content: '\25BC';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    padding: 0 1em;
+	    padding-top: 7px;
+	    background: #33C8CC;
+	    pointer-events: none;
+	    border-top-right-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	}
+	 
+	.select:hover::after {
+	    color: #CC3733;
+	    
+	}
+	 
+	.select::after {
+	    -webkit-transition: .25s all ease;
+	    -o-transition: .25s all ease;
+	    transition: .25s all ease;
+	}
+
+.d-none {
+	display: none;
+}
+
+.main-bottom {
+	width: 100%;
+}
+
+.boxes {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.boxes > div {
+	border: 1px solid;
+	border-radius: 12px;
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.boxes > div > h2,p {
+	padding-left: 3%;
+}
+
+ul {
+	padding-inline-start: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+.phone {
+	text-align: center;
+}
+
+.carousel-item {
+	height: 22rem;
+	background: #777;
+	color: white;
+	position: relative;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.carousel-inner {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.carousel-control-next,.carousel-control-prev {
+	opacity: .8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 3rem !important;
+	height: 3rem !important;
+}
+
+.container {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	padding-bottom: 35px;
+	padding-left: 10%;
+}
+
+.box-left {
+	width: 30%;
+	border-right: 1px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-left h2 {
+	margin-bottom: 50px;
+}
+
+.box-right {
+	width: 70%;
+}

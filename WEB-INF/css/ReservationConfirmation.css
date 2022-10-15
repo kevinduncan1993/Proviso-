@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
+#container {
+    width: 80%;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:125px;
+    margin-left: 10%
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reservationContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 3%;
+}
+
+#guestInformationContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 3%;
+}
+
+#guestInformationTable {
+	border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+/*
+#firstName, #lastName, #email, #phoneNumber  {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #D3D3D3;
+}
+*/
+
+#PaymentContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#payment {
+    margin: 0 auto 0 auto;
+}
+
+#PaymentInformation {
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+#submit {
+    margin: 0 auto 0 auto;
+    font-size: 17px;
+}
+
+td {
+	text-align: center;
+}
+
+#label {
+	text-align: left;
+	padding-right: 15px;
+}
+
+#reservationContainer:hover, #guestInformationContainer:hover, #PaymentContainer:hover {
+	border: 2px solid #33C8CC;
+	box-shadow: 0 4px 8px 0 #33C8CC;
+}
+
+input:hover {
+	border: 2px solid #33C8CC;
+	box-shadow: 0 4px 8px 0 #33C8CC;
+}
+
+button {
+	background-color: var(--button-color);
+	color: var(--button-text-color);
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
+}
+
+#money {
+	text-align: right;
+}
+
+#cost {
+	border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0;
+}
+
+.res-details {
+	border: 1px solid;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.restart {
+	padding: 2% 0;
+}

@@ -1,0 +1,193 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
+html {
+	height: 100vh;
+}
+
+.container {
+	min-height: 70vh;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.main {
+	margin: 20px;
+	outline: 2px solid black;
+	padding: 10px;
+}
+
+.center {
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+#dates-manual-input {
+	display: grid;
+	grid-template-columns: 30% 29% 30%;
+}
+
+#dates-form {
+	width: 415px
+}
+
+#dates-form label {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#dates-form input {
+	width: 110px;
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.justify-right {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	margin-left: auto;
+}
+
+.justify-left {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-right: auto;
+}
+
+.error-text {
+	color: red;
+}
+
+.basic-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	border: 1px solid black;
+	width: 10vw;
+	height: 4vw;
+	
+	background-color: var(--button-color);
+color: var(--button-text-color);
+	
+}
+
+.basic-button:hover {
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
+	cursor: pointer;
+}
+
+.month-change-button {
+	width: 7.5vw;
+	height: 7.5vw;
+	border-radius: 5px;
+	margin: auto;
+}
+
+#submit-dates-button {
+	margin: auto;
+}
+
+#calendar-gui {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+#displayed-calendars {
+	display: grid;
+  	grid-template-columns: auto auto;
+}
+
+.calendar {
+	display: grid;
+  	grid-template-rows: min-content min-content;
+  	margin: 2.5%;
+  	width: 95%;
+}
+
+.calendar .month {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10vw;
+	height: 2.5vw;
+	border: 1px solid;
+	border-radius: 10px;
+	margin: 1% auto 1% auto;
+	background-color: white;
+}
+
+.calendar .dates {
+	table-layout: fixed;
+	border: 1px solid;
+	margin: 0px auto;
+	width: 25vw;
+	height: 25vw;
+	border-spacing: 0.5vw;
+	border-collapse: separate;
+}
+
+.calendar .dates td {
+	width: 12%;
+	height: 12%;
+	text-align: center;
+	border: 1px solid;
+}
+
+.calendar .dates .day {
+	border: 1px solid;
+	background-color: white;
+}
+
+.calendar .dates .date {
+	border: 1px solid;
+	background-color: white;
+}
+
+.calendar .dates .calendar-date-disabled {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.calendar .dates .calendar-date-enabled:hover {
+	background-color: #CC373380;
+	cursor: pointer;
+}
+
+.calendar .dates .calendar-space-invisable {
+	color: rgba(0, 0, 0, 0);
+}
+
+.calendar .dates .calendar-date-chosen {
+	background-color: #CC373380;
+}
+
+.calendar .dates .calendar-date-between-chosen {
+	background-color: #33C8CC80;
+}
+
+#submit {
+	background: white;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: black;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background: #6c0001;
+	color: white;
+}
